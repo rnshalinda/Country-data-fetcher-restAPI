@@ -49,11 +49,50 @@ body{
     /* letter-spacing: 0.2px; */
 }
 
-@media(max-width:500px){
-    #box0{
-        width: 400px;
-        height: auto;
+#map iframe {
+    border-radius: 5px;
+}
+
+
+/* Screen Responsive */
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+
+    #box0 {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    #box1, #box2, #box3 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .container {
+        row-gap: 5px;
     }
 }
 
+@media (max-width: 370px){
+    #userInputArea {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #userInputArea 
+    button {
+        width: 70px;    
+    }
+    #userInputArea 
+    input {
+        width: auto;    
+    }
+}
 
